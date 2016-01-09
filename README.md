@@ -5,13 +5,18 @@ GoAccess is an open source real-time web log analyzer and interactive viewer tha
 
 # How to use this image
 
-The most simple usage:
+Print help:
+```bash
+docker run --rm diyan/goaccess --help
 ```
+
+The most simple usage:
+```bash
 TODO
 ```
 
 To generate an HTML report:
-```
+```bash
 cat access.log | docker run --rm -i diyan/goaccess \
   --time-format='%H:%M:%S' \
   --date-format='%d/%b/%Y' \
